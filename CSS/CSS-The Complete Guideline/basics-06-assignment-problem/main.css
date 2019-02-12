@@ -1,25 +1,50 @@
 body {
     font-family: sans-serif;
 }
+.highlight-code{
+    color:green;
+}
 h1{
-    color: red;
+    color: blue;
     font-style: sans-serif;
 }
-
 code{
     color: red;
     font-style: monospace;
 }
 
-#li-two > code{
-    color:green;
-}
 
-li{
-    font-family: inherit;
-}
 
+/* adjacent sibling combinator */
+li + li {
+    background: black;
+    color: white;
+}
+/* 
+or you could use the
+general sibling combinator 
+li ~ li {
+    background: black;
+    color: whitel
+} */
+
+
+
+
+/* direct child combinator */
 ol > li {
     background: black;
     color: white;
+}
+/*  or a little loser and do a descendant combinator */
+/* ol li {
+    background: black;
+    color: white;
+} */
+
+
+
+
+li{
+    font-family: inherit;
 }
